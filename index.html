@@ -2,14 +2,289 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gentul — Developer Portfolio</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>Gentul – Frontend Developer</title>
+
+  <!-- Fonts (non-generic, strong personality) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="app">
-    <h1>Gentul — Frontend Developer</h1>
-    <p>Designing fast, clean and modern interfaces.</p>
+  <div class="page-shell">
+
+    <!-- ============ HEADER / NAV ============ -->
+    <header class="site-header">
+      <div class="logo-mark">
+        <span class="logo-initial">G</span>
+        <span class="logo-text">entul.dev</span>
+      </div>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span>
+      </button>
+
+      <nav class="site-nav">
+        <a href="#hero">Home</a>
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="nav-cta">Let’s talk</a>
+      </nav>
+    </header>
+
+    <!-- ============ HERO ============ -->
+    <main>
+      <section id="hero" class="hero">
+        <div class="hero-left">
+          <p class="hero-kicker">Frontend · Web3 · Startups</p>
+          <h1 class="hero-title">
+            Developer & interface crafter for fast-moving teams.
+          </h1>
+          <p class="hero-sub">
+            I design and build sharp, fast websites for products that need to
+            look serious and feel smooth on any device.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#work" class="btn primary">View selected work</a>
+            <a href="#contact" class="btn ghost">Book a quick call</a>
+          </div>
+
+          <div class="hero-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>Tailwind</span>
+            <span>GitHub Pages</span>
+          </div>
+        </div>
+
+        <aside class="hero-right">
+          <div class="stat-card">
+            <p class="stat-label">Current focus</p>
+            <p class="stat-value">Landing pages & product sites</p>
+          </div>
+
+          <div class="stat-grid">
+            <div class="stat-chip">
+              <span class="chip-label">Web experience</span>
+              <span class="chip-value">2+ years</span>
+            </div>
+            <div class="stat-chip">
+              <span class="chip-label">Based in</span>
+              <span class="chip-value">Nigeria</span>
+            </div>
+            <div class="stat-chip">
+              <span class="chip-label">Fav builds</span>
+              <span class="chip-value">Brands · Cars · Web3</span>
+            </div>
+          </div>
+
+          <div class="now-playing">
+            <span class="dot"></span>
+            <div>
+              <p class="np-label">Now shipping</p>
+              <p class="np-text">Frontends for small teams & early-stage founders.</p>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <!-- ============ WORK ============ -->
+      <section id="work" class="section section-work">
+        <div class="section-header">
+          <p class="section-kicker">Selected projects</p>
+          <h2>Work that represents how I build.</h2>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Porsche -->
+          <article class="project-card fade-in">
+            <header class="project-head">
+              <h3>Porsche 911 Experience Site</h3>
+              <span class="project-pill">Multi-page · Automotive</span>
+            </header>
+            <p class="project-copy">
+              A cinematic, multi-page experience for Porsche 911 enthusiasts:
+              hero animations, scroll-based stats, engine-sound audio and an
+              explore-models flow that links to real Porsche specs.
+            </p>
+            <div class="project-meta">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>GitHub Pages</span>
+            </div>
+            <div class="project-links">
+              <a href="https://gentuldev.github.io/Porsche.web/index.html" target="_blank" rel="noopener">
+                Live preview
+              </a>
+              <a href="https://github.com/gentuldev/Porsche.web" target="_blank" rel="noopener">
+                View code
+              </a>
+            </div>
+          </article>
+
+          <!-- Braqz -->
+          <article class="project-card fade-in">
+            <header class="project-head">
+              <h3>Braqz – Footwear Brand Website</h3>
+              <span class="project-pill">E-commerce style · Brand</span>
+            </header>
+            <p class="project-copy">
+              Product-first layout for a streetwear footwear brand. Clean grid,
+              clear CTAs, WhatsApp ordering, and mobile-first performance for
+              real customers in Nigeria.
+            </p>
+            <div class="project-meta">
+              <span>Brand site</span>
+              <span>Responsive UI</span>
+              <span>Conversion-focused</span>
+            </div>
+            <div class="project-links">
+              <a href="https://braqz.shop" target="_blank" rel="noopener">
+                Visit site
+              </a>
+            </div>
+          </article>
+
+          <!-- Concept -->
+          <article class="project-card fade-in">
+            <header class="project-head">
+              <h3>Web3 / Trading Dashboard Concept</h3>
+              <span class="project-pill">Concept · Dark UI</span>
+            </header>
+            <p class="project-copy">
+              A dashboard concept for traders & degen micro-cap hunters:
+              modular cards, density-optimized layout, and typography tuned for
+              live charts and fast scanning.
+            </p>
+            <div class="project-meta">
+              <span>UI concept</span>
+              <span>Dark theme</span>
+              <span>Dashboard layout</span>
+            </div>
+            <div class="project-links">
+              <span class="project-note">Case study coming soon</span>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ============ SERVICES ============ -->
+      <section id="services" class="section section-services">
+        <div class="section-header">
+          <p class="section-kicker">What I do</p>
+          <h2>Frontend help that’s actually useful.</h2>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <h3>Launch-ready landing pages</h3>
+            <p>
+              One-page or small multi-page sites built to load fast, look sharp
+              and clearly explain what you’re selling.
+            </p>
+            <ul>
+              <li>Conversion-focused layout</li>
+              <li>Mobile-first responsive build</li>
+              <li>Deployed to GitHub Pages / Netlify</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <h3>Brand & founder websites</h3>
+            <p>
+              Clean, opinionated sites that make small teams look like they
+              know exactly what they’re doing.
+            </p>
+            <ul>
+              <li>Custom visual direction</li>
+              <li>Case-study style project sections</li>
+              <li>Light animations & micro-interactions</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <h3>Web3 / crypto micro-sites</h3>
+            <p>
+              Simple but strong fronts for tokens, tools, and dashboards:
+              fast pages, strong messaging, no bullshit.
+            </p>
+            <ul>
+              <li>Hero + token story layout</li>
+              <li>Roadmap / FAQ sections</li>
+              <li>Links to DEX / docs / socials</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ ABOUT ============ -->
+      <section id="about" class="section section-about">
+        <div class="section-header">
+          <p class="section-kicker">About</p>
+          <h2>A political science student who chose to ship pixels.</h2>
+        </div>
+
+        <div class="about-layout">
+          <p>
+            I’m Sadiq (online: <strong>Gentul</strong>), a self-taught frontend
+            developer currently studying Political Science at NSUK.
+          </p>
+          <p>
+            I build for people who care about how their product feels in the
+            browser – not just that “it works”. I like fast loops, clear
+            feedback, and working directly with founders, traders and small
+            teams.
+          </p>
+          <p>
+            If you need someone to own the frontend, iterate quickly, and keep
+            the UI clean, I’m in.
+          </p>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section id="contact" class="section section-contact">
+        <div class="contact-card">
+          <p class="section-kicker">Contact</p>
+          <h2>Got a project, MVP or wild idea?</h2>
+          <p class="contact-text">
+            Tell me what you’re building and I’ll reply with how I’d approach
+            the frontend, timeline and a rough price.
+          </p>
+
+          <div class="contact-actions">
+            <a
+              href="mailto:gentulwrldwide@gmail.com?subject=Frontend%20project%20inquiry"
+              class="btn primary wide"
+            >
+              Email me the details
+            </a>
+            <p class="contact-meta">
+              Or reach me on X: <a href="https://x.com/gentulSZN" target="_blank" rel="noopener">@gentulSZN</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Gentul. Built by hand with HTML, CSS & JS.</p>
+    </footer>
   </div>
 
   <script src="script.js"></script>
